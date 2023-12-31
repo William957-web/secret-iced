@@ -29,7 +29,6 @@ def home():
         template = template + '''
         <h1>Hi {}</h1>
         Welcome to the vulnerable app.<br>
-        Have fun with Server-Side Template Injection (SSTI).
         '''.format(user) + footer
     
     return render_template_string(template)
