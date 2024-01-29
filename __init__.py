@@ -19,7 +19,7 @@ def home():
 
     if user == None:
         template = template + '''
-        <h1>Login Form</h1>
+        <h1><font color="white">Login Form</font></h1>
         <form>
         <input name="user" style="border: 2px solid #C21010; padding: 10px; border-radius: 10px; margin-bottom: 25px;" value="Username"><br>
         <input type="submit" value="Log In" style="border: 0px; padding: 5px 20px ; color: #C21010;">
@@ -27,8 +27,7 @@ def home():
         '''.format(user) + footer
     else:
         template = template + '''
-        <h1>Hi {}</h1>
-        Welcome to the vulnerable app.<br>
+        <h1><font color="white">Hi {}</font></h1>
         '''.format(user) + footer
     
     return render_template_string(template)
